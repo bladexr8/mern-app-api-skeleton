@@ -11,13 +11,9 @@ import Template from '../template';
 import userRoutes from './routes/user.routes'
 import authRoutes from './routes/auth.routes'
 
-//comment out before building for production
-import devBundle from './devBundle'
 
+// create the Express App
 const app = express()
-
-//comment out before building for production
-devBundle.compile(app)
 
 // static files
 const CURRENT_WORKING_DIR = process.cwd()
