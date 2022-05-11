@@ -18,6 +18,10 @@ const UserSchema = new mongoose.Schema({
         type: Boolean,
         default: true
     },
+    admin: {
+        type: Boolean,
+        default: false
+    },
     created: {
         type: Date,
         default: Date.now
