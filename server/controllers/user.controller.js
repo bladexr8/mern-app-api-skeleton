@@ -20,6 +20,7 @@ const create = async (req, res) => {
  // route('/api/users').get
 const list = async (req, res) => { 
     try {
+        console.log('***Listing Users...');
         let users = await User.find().select(`name email updated created`)
         res.json(users)
     } catch (err) {
