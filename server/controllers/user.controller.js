@@ -4,6 +4,7 @@ import errorHandler from './../helpers/dbErrorHandler'
 
 // route('/api/users').post
 const create = async (req, res) => { 
+    console.log('***Creating User...');
     const user = new User(req.body)
     try {
         await user.save()
